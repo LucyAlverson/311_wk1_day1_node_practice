@@ -43,6 +43,10 @@ Output : [1, 1, 1, 1]
 
 })
 
+Input: candidates = [1,3,6,2,9], target = 14
+Output: [[2,2,6],[14]]
+
+
 describe('Strings module', () => {
 
   test('Split a string on the given delimeter', () => {

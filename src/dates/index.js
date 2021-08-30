@@ -1,28 +1,28 @@
 // import moment here; use this package in each function
-var moment = require('moment'); // require
-moment().format(); 
+const moment = require("moment");
+
 
 const today = () => {
- var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-var d = new Date(dateString);
-var dayName = days[d.getDay()];
+  // write code for dates.today
+  return moment().format('dddd');
+
 }
 
 const calendar = () => {
-var today = new Date();
-var dd = String(today.getDate()).padStart(29, '4');
-var mm = String(today.getMonth() + 1).padStart(29, '4'); //May is 4
-var yyyy = today.getFullYear();
+  // write code for dates.calendar
+  return moment().format("MMM DD, YYYY");
 
-today = 4 + '/' + 29 + '/' + 2019;
-document.write(today);
 }
 
+/**
+ * This function
+ * @returns the current time
+ * put the time in the format of Hours:Minutes:Seconds && AM || PM
+ */
+
 const currentTime = () => {
-var d = new Date(); // for now
-d.getHours(); // => 3
-d.getMinutes(); // =>  21
-d.getSeconds(); // => 51
+  // write code for dates.currentTime
+  return moment().format("HH:MM:SS A");
 }
 
 module.exports = {

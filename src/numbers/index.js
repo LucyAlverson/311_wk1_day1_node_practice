@@ -1,10 +1,10 @@
 
 
 const isEven = (num) => {
- if (num % 2 === 0: ) {
-        return True
+ if (num % 2 === 0 ) {
+        return true
  } else {
-        return False;
+        return false;
  }
 }
 
@@ -17,21 +17,15 @@ return arr.reduce(reduceFunction);
 }
 
 const comboSum = (arr, sum) => {
-bool comboSum(const int a[], int size, int target, int count = 0)
-{
-    if (target == 0 && size == 0 && count == 0)
-        return false;
-    else if (target == 0)
-       return true;
-    else if (target != 0 && size == 0)
-       return false;
-
-size--;
-
-return (comboSum(a, size, target) || comboSum(a, size, target - a[size]));
-};
-
-}
+       for(let x in arr){
+         for(let y in arr){
+           
+           if (arr[x] + arr[y] === sum){
+             return true
+             } else {return false}
+           
+         }
+       } }
 
 module.exports = {
   isEven,
